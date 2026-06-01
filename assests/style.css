@@ -15252,6 +15252,62 @@ html {
 }
 
 /*------------------------
+    Client Marquee Animation
+-------------------------*/
+.tmp-client-marquee-wrapper {
+  overflow: hidden;
+  width: 100%;
+}
+
+.tmp-client-marquee {
+  padding: 20px 0;
+}
+
+.tmp-client-marquee-track {
+  display: flex;
+  gap: 20px;
+  animation: scrollClientMarquee 60s linear infinite;
+  width: max-content;
+}
+
+.tmp-client-item {
+  flex-shrink: 0;
+  min-width: calc(25% - 15px);
+  max-width: calc(25% - 15px);
+}
+
+@keyframes scrollClientMarquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@media only screen and (max-width: 1199px) {
+  .tmp-client-item {
+    min-width: calc(33.333% - 14px);
+    max-width: calc(33.333% - 14px);
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .tmp-client-item {
+    min-width: calc(50% - 10px);
+    max-width: calc(50% - 10px);
+  }
+  
+  .tmp-client-marquee-track {
+    gap: 15px;
+  }
+}
+
+.tmp-client-marquee:hover .tmp-client-marquee-track {
+  animation-play-state: paused;
+}
+
+/*------------------------
     Testimonial Style 01 
 -------------------------*/
 .testimonial-style-1 {
