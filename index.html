@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="en"
-    class=" no-sizes customelements history pointerevents postmessage webgl websockets cssanimations csscolumns csscolumns-width csscolumns-span csscolumns-fill csscolumns-gap csscolumns-rule csscolumns-rulecolor csscolumns-rulestyle csscolumns-rulewidth csscolumns-breakbefore csscolumns-breakafter csscolumns-breakinside flexbox picture no-srcset webworkers">
+<html lang="en">
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -15,7 +14,7 @@
 
     <link rel="stylesheet" href="./assests/bootstrap.css">
     <link rel="stylesheet" href="./assests/animation.css">
-    <link rel="stylesheet" href="./assests/fontawesome.css">
+
     <link rel="stylesheet" href="./assests/lightbox.css">
     <link rel="stylesheet" href="./assests/box-video.css">
     <link rel="stylesheet" href="./assests/magnific-popup.css">
@@ -26,26 +25,17 @@
 </head>
 
 <body class="home-designer">
-    <!-- Preloader Start -->
-    <div class="justin-preloader is-loaded" style="display: none;">
-        <div class="justin-preloader-inner">
-            <div class="justin-preloader-ball-wrap">
-                <div class="justin-preloader-ball-inner-wrap">
-                    <div class="justin-preloader-ball-inner">
-                        <div class="justin-preloader-ball"></div>
-                    </div>
-                    <div class="justin-preloader-ball-shadow"></div>
-                </div>
-                <div id="justin-weave-anim" class="justin-preloader-text">
-                    <span>L</span><span>o</span><span>a</span><span>d</span><span>i</span><span>n</span><span>g</span><span>.</span><span>.</span><span>.</span>
-                </div>
+    <!-- Modern Preloader -->
+    <div id="preloader" class="preloader">
+        <div class="loader-content">
+            <div class="loader-spinner">
+                <div class="spinner-ring"></div>
             </div>
+            <h2 class="loader-title">JUSTIN MWAPE</h2>
+            <p class="loader-subtitle">Loading Experience...</p>
         </div>
-        <div class="justin-preloader-overlay"></div>
     </div>
-    <!-- Preloader end -->
-    <!-- Start Header Area -->
-    <header class="tmp-header-area header-one header-defalut-spacing header--sticky header--transparent sticky">
+    <header class="tmp-header-area header-one header-defalut-spacing header--sticky header--transparent">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -59,15 +49,15 @@
                             <nav class="tmp-mainmenu-nav d-none d-xl-block tmp-on-hover-animation">
                                 <nav class="navbar-example2 onepagenav">
                                     <ul class="tmp-mainmenu nav nav-pills">
-                                        <li class=""><a class="smoth-animation" href="./index.html">Home</a>
+                                        <li class=""><a class="smoth-animation" href="#home">Home</a>
                                         </li>
-                                        <li class=""><a class="smoth-animation" href="">Services</a>
+                                        <li class=""><a class="smoth-animation" href="#service">Services</a>
                                         </li>
-                                        <li><a class="smoth-animation" href="">Blog</a>
+                                        <li><a class="smoth-animation" href="#blog">Blog</a>
                                         </li>
-                                        <li><a class="smoth-animation" href="">Contact</a>
+                                        <li><a class="smoth-animation" href="#contact">Contact</a>
                                         </li>
-                                        <li class="current"><a class="smoth-animation" href="">Portfolio</a>
+                                        <li class="current"><a class="smoth-animation" href="#portfolio">Portfolio</a>
                                         </li>
                                         <!-- <li class="has-dropdown">
                                             <a class="smoth-animation"
@@ -96,10 +86,11 @@
                             </nav>
                             <div class="header-btn tmp-button-group d-flex align-items-center">
                                 <a class="tmp-btn btn-border tmp-switch-btn btn-sm hover-transform-none radius-round d-none d-sm-block"
-                                    href="">
-                                    <span data-text="Let’s Talk">Let’s Talk</span>
+                                    href="https://web.whatsapp.com/" target="_blank">
+                                    <span data-text="Let’s Talk" >Let’s Talk</span>
                                 </a>
-                                <a class="tmp-btn tmp-switch-btn btn-sm hover-transform-none radius-round" href="">
+                                <a class="tmp-btn tmp-switch-btn btn-sm hover-transform-none radius-round"
+                                    href="#contact">
                                     <span data-text="Join Now">Join Now</span>
                                 </a>
                             </div>
@@ -120,9 +111,8 @@
             <div class="inner">
                 <div class="header-top">
                     <div class="logo">
-                        <a href="https://html.justin.com/biohub/index.html" class="logo-area">
-                            <img class="logo-dark" src="./assests/main-logo.svg" alt="logo">
-                            <img class="logo-white" src="./assests/main-logo.svg" alt="logo">
+                        <a href="./index.html">
+                            Justin Mwape
                         </a>
                     </div>
 
@@ -134,34 +124,30 @@
                 </div>
 
                 <ul class="tmp-mainmenu onepagenav-click">
-                    <li><a class="smoth-animation" href="https://html.justin.com/biohub/designer.html#home">Home</a>
+                    <li><a class="smoth-animation" href="#home">Home</a>
                     </li>
                     <li><a class="smoth-animation"
-                            href="https://html.justin.com/biohub/designer.html#service">Services</a></li>
+                            href="#service">Services</a></li>
                     <li><a class="smoth-animation"
-                            href="https://html.justin.com/biohub/designer.html#portfolio">Portfolio</a></li>
+                            href="#portfolio">Portfolio</a></li>
+                     
+                    </li>
+             
                     <li><a class="smoth-animation"
-                            href="https://html.justin.com/biohub/designer.html#resume">Resume</a></li>
-                    <li><a class="smoth-animation"
-                            href="https://html.justin.com/biohub/designer.html#pricing">Pricing</a></li>
-                    <li><a class="smoth-animation" href="https://html.justin.com/biohub/designer.html#blog">Blog</a>
+                            href="#blog">Blog</a>
                     </li>
                     <li><a class="smoth-animation"
-                            href="https://html.justin.com/biohub/designer.html#contacts">Contact</a></li>
+                            href="#contact">Contact</a></li>
                 </ul>
 
                 <!-- social sharea area -->
                 <div class="social-wrapper mt--40">
                     <span class="subtitle">find with me</span>
                     <div class="social-link">
-                        <a ><i
-                                class="fa-brands fa-instagram"></i></a>
-                        <a ><i
-                                class="fa-brands fa-linkedin-in"></i></a>
-                        <a ><i
-                                class="fa-brands fa-twitter"></i></a>
-                        <a ><i
-                                class="fa-brands fa-facebook-f"></i></a>
+                        <a><i class="fa-brands fa-instagram"></i></a>
+                        <a><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a><i class="fa-brands fa-twitter"></i></a>
+                        <a><i class="fa-brands fa-facebook-f"></i></a>
                     </div>
                 </div>
                 <!-- end -->
@@ -199,49 +185,54 @@
                             <div>
                                 <span class="font-small">My Skills On</span>
                                 <div class="tmp-expertise pt-4 d-flex align-items-center gap-4 max-content">
-                                    <a 
-                                        class="tmp-expertise-item avatar" data-tooltip="Figma" tabindex="0">
-                                        <img src="./assests/figma.svg" alt="">
+
+                                    <a class="tmp-expertise-item avatar" data-tooltip="Multi-Rig Operations"
+                                        tabindex="0">
+                                        <i class="fas fa-layer-group" style="color:#ff5e57;"></i>
                                     </a>
-                                    <a 
-                                        class="tmp-expertise-item avatar" data-tooltip="Photoshop" tabindex="0">
-                                        <img src="./assests/photoshop.svg" alt="">
+
+                                    <a class="tmp-expertise-item avatar" data-tooltip="Diamond Drilling" tabindex="0">
+                                        <i class="fas fa-gem" style="color:#4cd137;"></i>
                                     </a>
-                                    <a 
-                                        class="tmp-expertise-item avatar" data-tooltip="Illustrator" tabindex="0">
-                                        <img src="./assests/ai.svg" alt="">
+
+                                    <a class="tmp-expertise-item avatar" data-tooltip="RC Drilling" tabindex="0">
+                                        <i class="fas fa-circle-notch" style="color:#00a8ff;"></i>
                                     </a>
-                                    <a 
-                                        class="tmp-expertise-item avatar" data-tooltip="XD" tabindex="0">
-                                        <img src="./assests/xd.svg" alt="">
+
+                                    <a class="tmp-expertise-item avatar" data-tooltip="HSE Management" tabindex="0">
+                                        <i class="fas fa-hard-hat" style="color:#ffa502;"></i>
                                     </a>
+
                                 </div>
                             </div>
                             <div>
                                 <span class="font-small">Exeptional Skill</span>
                                 <div class="tmp-expertise pt-4 d-flex align-items-center gap-4 max-content">
-                                    <a 
-                                        class="tmp-expertise-item avatar" data-tooltip="Framer" tabindex="0">
-                                        <img src="./assests/framer.svg" alt="">
+
+                                    <a class="tmp-expertise-item avatar" data-tooltip="Team Leadership" tabindex="0">
+                                        <i class="fas fa-users" style="color:#6c5ce7;"></i>
                                     </a>
-                                    <a 
-                                        class="tmp-expertise-item avatar" data-tooltip="After Effect" tabindex="0">
-                                        <img src="./assests/ae.svg" alt="">
+
+                                    <a class="tmp-expertise-item avatar" data-tooltip="Equipment Maintenance"
+                                        tabindex="0">
+                                        <i class="fas fa-wrench" style="color:#00b894;"></i>
                                     </a>
-                                    <a 
-                                        class="tmp-expertise-item avatar" data-tooltip="Canva" tabindex="0">
-                                        <img src="./assests/canva.svg" alt="">
+
+                                    <a class="tmp-expertise-item avatar" data-tooltip="Client Coordination"
+                                        tabindex="0">
+                                        <i class="fas fa-handshake" style="color:#0984e3;"></i>
                                     </a>
-                                    <a 
-                                        class="tmp-expertise-item avatar" data-tooltip="Webflow" tabindex="0">
-                                        <img src="./assests/webflow.svg" alt="">
+
+                                    <a class="tmp-expertise-item avatar" data-tooltip="Troubleshooting" tabindex="0">
+                                        <i class="fas fa-tools" style="color:#fdcb6e;"></i>
                                     </a>
+
                                 </div>
                             </div>
                         </div>
                         <div class="banner-btn mt-70 tmp-scroll-trigger tmp-fade-in animation-order-5">
-                            <a class="tmp-btn hover-icon-reverse radius-round"
-                                >
+                            <a class="tmp-btn hover-icon-reverse radius-round" href="./assests/Mwape Justin CV...pdf"
+                                target="_blank">
                                 <span class="icon-reverse-wrapper">
                                     <span class="btn-text">Download CV</span>
                                     <span class="btn-icon"><i class="fas fa-download"></i></span>
@@ -304,7 +295,7 @@
                 </div>
                 <div class="col-xl-4 col-lg-6 col-md-6 tmp-scroll-trigger tmp-fade-in animation-order-2">
                     <div class="service service-style-2 invonhover" data-bs-toggle="modal"
-                        data-bs-target="#exampleModalService" style="--x: 336px; --y: 106.40625px;">
+                        data-bs-target="#exampleModalService">
                         <div class="shape">
                             <div class="is-1">
                                 <img src="./assests/vector.svg" alt="">
@@ -369,7 +360,7 @@
                             <img src="./assests/shape.svg" alt="">
                         </div>
                         <figure class="main-image">
-                            <img class="tmp-scroll-trigger tmp-zoom-in animation-order-2" height="750" width="470"
+                            <img class="tmp-scroll-trigger tmp-zoom-in animation-order-2" height="600" width="470"
                                 src="./assests/men.png" alt="">
                         </figure>
                         <div class="experience">
@@ -395,7 +386,7 @@
                             </h2>
 
                             <p class="tmp-scroll-trigger tmp-fade-in animation-order-3">
-                                Drilling Superintendent / Senior Drill Supervisor with 19+ years of experience in
+                                Drilling Superintendent with 19+ years of experience in
                                 diamond and RC drilling across Africa and the Middle East. Skilled in multi-rig
                                 operations, drilling optimization, and safe, efficient project delivery in complex
                                 geological conditions. Strong leader focused on improving core recovery, reducing
@@ -484,58 +475,47 @@
             <!-- End Section Title  -->
             <div class="row g-5 justify-content-center">
                 <!-- single portfolio -->
-                <div class="pin-spacer">
-                    <div class="col-xxl-10 col-xl-12 col-lg-12 service-stack">
-                        <div class="portfolio-style-2 inv-hover-item"
-                            style="background-image: url(assets/images/designer/portfolio/bg-1.jpg);"
-                            data-bs-toggle="modal" data-bs-target="#exampleModal">
-                            <div class="content">
-                                <div class="content-left">
-                                    <a>
-                                        <h3 class="fw-bold mb-40">
-                                            Brand Identity Crafted
-                                            For Meaningful Recognition
-                                        </h3>
+                <div class="col-xxl-10 col-xl-12 col-lg-12 service-stack">
+                    <div class="portfolio-style-2 inv-hover-item" style="background-image: url(assests/bg-1.jpg);"
+                        data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <div class="content">
+                            <div class="content-left">
+                                <a href="javascript:void(0)">
+                                    <h3 class="fw-bold mb-40">
+                                        Drilling Project Execution & Leadership
+                                    </h3>
+                                </a>
+
+                                <div class="content-left-box">
+
+
+                                    <p>
+                                        Supervised diamond and RC drilling operations, ensuring safe and efficient
+                                        execution
+                                        across multiple sites with strong team coordination.
+                                    </p>
+
+                                    <div class="portfolio-btn max-content mt-30">
+                                        <a class="tmp-btn hover-icon-reverse radius-round" href="javascript:void(0)">
+                                            <span class="icon-reverse-wrapper">
+                                                <span class="btn-text">View Project</span>
+                                                <span class="btn-icon"><i
+                                                        class="fa-sharp fa-regular fa-arrow-right"></i></span>
+                                                <span class="btn-icon"><i
+                                                        class="fa-sharp fa-regular fa-arrow-right"></i></span>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-right">
+                                <div class="content-right-thumb inv-hover-img" data-displacement="as"
+                                    data-intensity="0.5" data-speedin="1" data-speedout="1">
+                                    <a href="javascript:void(0)">
+                                        <img src="assests/1.png" alt="">
                                     </a>
-
-                                    <div class="content-left-box">
-                                        <h4 class="font-30 mb-20 fw-bold">Project - Branding Identity</h4>
-
-                                        <p>A complete brand identity project focused on creating a strong visual
-                                            presence,
-                                            consistency, and memorable user perception across platforms.</p>
-
-                                        <div class="portfolio-btn max-content mt-30">
-                                            <a class="tmp-btn hover-icon-reverse radius-round">
-                                                <span class="icon-reverse-wrapper">
-                                                    <span class="btn-text">View Project</span>
-                                                    <span class="btn-icon"><i
-                                                            class="fa-sharp fa-regular fa-arrow-right"></i></span>
-                                                    <span class="btn-icon"><i
-                                                            class="fa-sharp fa-regular fa-arrow-right"></i></span>
-                                                </span>
-                                            </a>
-                                        </div>
-                                    </div>
                                 </div>
-                                <div class="content-right">
-                                    <div class="content-right-thumb inv-hover-img"
-                                        data-displacement="assets/images/main/fluid.webp" data-intensity="0.2"
-                                        data-speedin="1" data-speedout="1">
-                                        <a>
-                                            <img src="./assests/1.png" alt="">
-                                        </a>
-                                        <canvas width="906" height="568" style="width: 453px; height: 284px;"></canvas>
-                                    </div>
-                                    <div class="btn-group d-flex gap-3 max-content mt-50">
-                                        <a class="tmp-btn tmp-marquee-btn btn-sm btn-border radius-round">
-                                            <span data-text="Contact Me">Contact Me</span>
-                                        </a>
-                                        <a class="tmp-btn tmp-marquee-btn btn-sm radius-round">
-                                            <span data-text="Branding">Branding</span>
-                                        </a>
-                                    </div>
-                                </div>
+
                             </div>
                         </div>
                     </div>
@@ -543,115 +523,116 @@
                 <!-- end single portfolio -->
 
                 <!-- single portfolio -->
-                <div class="pin-spacer">
-                    <div class="col-xxl-10 col-xl-12 col-lg-12 service-stack">
-                        <div class="portfolio-style-2 inv-hover-item"
-                            style="background-image: url(assets/images/designer/portfolio/2.png);"
-                            data-bs-toggle="modal" data-bs-target="#exampleModal">
-                            <div class="content">
-                                <div class="content-left">
-                                    <a>
-                                        <h3 class="fw-bold mb-40">
-                                            Digital Experiences Designed
-                                            To Engage
-                                        </h3>
-                                    </a>
-                                    <div class="content-left-box">
-                                        <h4 class="font-30 mb-20 fw-bold">Project - Web Experience</h4>
+                <div class="col-xxl-10 col-xl-12 col-lg-12 service-stack">
+                    <div class="portfolio-style-2 inv-hover-item" style="background-image: url(assests/2.png);"
+                        data-bs-toggle="modal" data-bs-target="#exampleModal">
 
-                                        <p>A modern, responsive website designed to improve user engagement,
-                                            usability, and performance with clean UI and smooth interactions.</p>
+                        <div class="content">
 
-                                        <div class="portfolio-btn max-content mt-30">
-                                            <a class="tmp-btn hover-icon-reverse radius-round">
-                                                <span class="icon-reverse-wrapper">
-                                                    <span class="btn-text">View Project</span>
-                                                    <span class="btn-icon"><i
-                                                            class="fa-sharp fa-regular fa-arrow-right"></i></span>
-                                                    <span class="btn-icon"><i
-                                                            class="fa-sharp fa-regular fa-arrow-right"></i></span>
-                                                </span>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="content-right">
-                                    <div class="content-right-thumb inv-hover-img"
-                                        data-displacement="assets/images/main/fluid.webp" data-intensity="0.2"
-                                        data-speedin="1" data-speedout="1">
-                                        <a>
-                                            <img src="./assests/2.png" alt="">
-                                        </a>
-                                        <canvas width="960" height="598" style="width: 480px; height: 299px;"></canvas>
-                                    </div>
-                                    <div class="btn-group d-flex gap-3 max-content mt-50">
-                                        <a class="tmp-btn tmp-marquee-btn btn-sm btn-border radius-round">
-                                            <span data-text="Contact Me">Contact Me</span>
-                                        </a>
-                                        <a class="tmp-btn tmp-marquee-btn btn-sm radius-round">
-                                            <span data-text="Web Design">Web Design</span>
+                            <!-- LEFT SIDE -->
+                            <div class="content-left">
+                                <a href="javascript:void(0)">
+                                    <h3 class="fw-bold mb-40">
+                                        High-Performance Drilling Leadership
+                                    </h3>
+                                </a>
+
+                                <div class="content-left-box">
+
+
+                                    <p>
+                                        Managed multiple diamond and RC drilling projects, ensuring safe execution,
+                                        improved penetration rates, and reduced downtime.
+                                    </p>
+
+                                    <div class="portfolio-btn max-content mt-30">
+                                        <a class="tmp-btn hover-icon-reverse radius-round" href="javascript:void(0)">
+                                            <span class="icon-reverse-wrapper">
+                                                <span class="btn-text">View Project</span>
+                                                <span class="btn-icon"><i
+                                                        class="fa-sharp fa-regular fa-arrow-right"></i></span>
+                                                <span class="btn-icon"><i
+                                                        class="fa-sharp fa-regular fa-arrow-right"></i></span>
+                                            </span>
                                         </a>
                                     </div>
                                 </div>
                             </div>
+
+                            <!-- RIGHT SIDE -->
+                            <div class="content-right">
+
+                                <div class="content-right-thumb inv-hover-img"
+                                    data-displacement="assets/images/main/fluid.webp" data-intensity="0.2"
+                                    data-speedin="1" data-speedout="1">
+
+                                    <a href="javascript:void(0)">
+                                        <img src="assests/2.png" alt="">
+                                    </a>
+                                </div>
+
+
+
+                            </div>
+
                         </div>
                     </div>
                 </div>
                 <!-- end single portfolio -->
 
                 <!-- single portfolio -->
-                <div class="pin-spacer">
-                    <div class="col-xxl-10 col-xl-12 col-lg-12 service-stack">
-                        <div class="portfolio-style-2 inv-hover-item"
-                            style="background-image: url(assets/images/designer/portfolio/3.png);"
-                            data-bs-toggle="modal" data-bs-target="#exampleModal">
-                            <div class="content">
-                                <div class="content-left">
-                                    <a>
-                                        <h3 class="fw-bold mb-40">
-                                            User Interfaces Shaped
-                                            Through Research
-                                        </h3>
-                                    </a>
-                                    <div class="content-left-box">
-                                        <h4 class="font-30 mb-20 fw-bold">Project - UI Case Study</h4>
+                <div class="col-xxl-10 col-xl-12 col-lg-12 service-stack">
+                    <div class="portfolio-style-2 inv-hover-item" style="background-image: url(assests/3.png);"
+                        data-bs-toggle="modal" data-bs-target="#exampleModal">
 
-                                        <p>An in-depth UI case study focusing on layout structure, color systems,
-                                            typography choices, and user-centered design principles.</p>
+                        <div class="content">
 
-                                        <div class="portfolio-btn max-content mt-30">
-                                            <a class="tmp-btn hover-icon-reverse radius-round">
-                                                <span class="icon-reverse-wrapper">
-                                                    <span class="btn-text">View Project</span>
-                                                    <span class="btn-icon"><i
-                                                            class="fa-sharp fa-regular fa-arrow-right"></i></span>
-                                                    <span class="btn-icon"><i
-                                                            class="fa-sharp fa-regular fa-arrow-right"></i></span>
-                                                </span>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="content-right">
-                                    <div class="content-right-thumb inv-hover-img"
-                                        data-displacement="assets/images/main/fluid.webp" data-intensity="0.2"
-                                        data-speedin="1" data-speedout="1">
-                                        <a>
-                                            <img src="./assests/3.png" alt="">
-                                        </a>
-                                        <canvas width="986" height="616" style="width: 493px; height: 308px;"></canvas>
-                                    </div>
-                                    <div class="btn-group d-flex gap-3 max-content mt-50">
-                                        <a class="tmp-btn tmp-marquee-btn btn-sm btn-border radius-round"
-                                    >
-                                            <span data-text="Contact Me">Contact Me</span>
-                                        </a>
-                                        <a class="tmp-btn tmp-marquee-btn btn-sm radius-round">
-                                            <span data-text="UI Design">UI Design</span>
+                            <!-- LEFT SIDE -->
+                            <div class="content-left">
+                                <a href="javascript:void(0)">
+                                    <h3 class="fw-bold mb-40">
+                                        Precision Drilling Excellence
+                                    </h3>
+                                </a>
+
+                                <div class="content-left-box">
+
+
+                                    <p>
+                                        Managed diamond and RC drilling operations with a focus on safety,
+                                        efficiency, and core recovery optimization.
+                                    </p>
+
+                                    <div class="portfolio-btn max-content mt-30">
+                                        <a class="tmp-btn hover-icon-reverse radius-round" href="javascript:void(0)">
+                                            <span class="icon-reverse-wrapper">
+                                                <span class="btn-text">View Project</span>
+                                                <span class="btn-icon"><i
+                                                        class="fa-sharp fa-regular fa-arrow-right"></i></span>
+                                                <span class="btn-icon"><i
+                                                        class="fa-sharp fa-regular fa-arrow-right"></i></span>
+                                            </span>
                                         </a>
                                     </div>
                                 </div>
                             </div>
+
+                            <!-- RIGHT SIDE -->
+                            <div class="content-right">
+
+                                <div class="content-right-thumb inv-hover-img"
+                                    data-displacement="assets/images/main/fluid.webp" data-intensity="0.2"
+                                    data-speedin="1" data-speedout="1">
+
+                                    <a href="javascript:void(0)">
+                                        <img src="assests/3.png" alt="">
+                                    </a>
+                                </div>
+
+
+
+                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -692,9 +673,8 @@
             </div>
             <!-- End Section Title  -->
             <div class="row g-5 justify-content-center invers-arrange-container">
-                <div class="col-lg-6 invers-arrange-item"
-                    style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
-                    <div class="tmp-education">
+                <div class="col-lg-6 invers-arrange-item">
+                    <div class="tmp-education h-100">
 
                         <div
                             class="tmp-title mb-30 d-flex gap-3 align-items-center font-30 fw-bold tmp-scroll-trigger tmp-fade-in animation-order-1">
@@ -702,7 +682,7 @@
                             Education & Certifications
                         </div>
 
-                        <div class="d-flex flex-column gap-35">
+                        <div class="d-flex flex-column gap-5">
 
                             <!-- Education -->
                             <div class="single-education-item tmp-scroll-trigger tmp-fade-in animation-order-1">
@@ -758,8 +738,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 invers-arrange-item"
-                    style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
+                <div class="col-lg-6 invers-arrange-item">
                     <div class="tmp-education mb-30">
                         <div
                             class="tmp-title mb-30 d-flex gap-3 align-items-center font-30 fw-bold tmp-scroll-trigger tmp-fade-in animation-order-1">
@@ -1074,80 +1053,16 @@
                 </div>
             </div>
         </div>
-        <div class="container mt-60">
-            <div class="row">
-                <div class="col-12">
-                    <div class="tmp-client-title mb-60">
-                        <h3 class="h5">Trusted by World’s Awesome Clients</h3>
-                    </div>
-                </div>
-            </div>
-            <div class="row g-5">
-                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 tmp-scroll-trigger tmp-fade-in animation-order-1">
-                    <div class="tmp-client-card text-center">
-                        <a  aria-label="client">
-                            <img src="./assests/1.svg" alt="">
-                        </a>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 tmp-scroll-trigger tmp-fade-in animation-order-2">
-                    <div class="tmp-client-card text-center">
-                        <a aria-label="client">
-                            <img src="./assests/2.svg" alt="">
-                        </a>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 tmp-scroll-trigger tmp-fade-in animation-order-3">
-                    <div class="tmp-client-card text-center">
-                        <a aria-label="client">
-                            <img src="./assests/3.svg" alt="">
-                        </a>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 tmp-scroll-trigger tmp-fade-in animation-order-4">
-                    <div class="tmp-client-card text-center">
-                        <a aria-label="client">
-                            <img src="./assests/4.svg" alt="">
-                        </a>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 tmp-scroll-trigger tmp-fade-in animation-order-5">
-                    <div class="tmp-client-card text-center">
-                        <a aria-label="client">
-                            <img src="./assests/5.svg" alt="">
-                        </a>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 tmp-scroll-trigger tmp-fade-in animation-order-6">
-                    <div class="tmp-client-card text-center">
-                        <a  aria-label="client">
-                            <img src="./assests/6.svg" alt="">
-                        </a>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 tmp-scroll-trigger tmp-fade-in animation-order-7">
-                    <div class="tmp-client-card text-center">
-                        <a  aria-label="client">
-                            <img src="./assests/7.svg" alt="">
-                        </a>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 tmp-scroll-trigger tmp-fade-in animation-order-8">
-                    <div class="tmp-client-card text-center">
-                        <a  aria-label="client">
-                            <img src="./assests/8.svg" alt="">
-                        </a>
-                    </div>
-                </div>
-            </div>
+
+        </div>
+        </div>
+
         </div>
     </section>
     <!-- client section end -->
 
-    <section class="tmp-section tmp-section-padding tmp-model-blog" id="blog">
-        <div class="tmp-section-blog-shape"></div>
+    <section class="blog-section py-5" id="blog">
         <div class="container">
-            <!-- Start Section Title  -->
             <div class="row justify-content-center">
                 <div class="col-lg-12">
                     <div class="tmp-section-content mb--60 text-center">
@@ -1159,181 +1074,97 @@
                         <h2
                             class="tmp-section-title fw-bold mt-4 mb-4 tmp-scroll-trigger tmp-fade-in animation-order-2">
                             Recent Post</h2>
-                        <p class="tmp-section-desc mx-auto tmp-scroll-trigger tmp-fade-in animation-order-3">With a
-                            strong foundation in frontend development and a keen eye for design, I specialize in
-                            creating interactive and responsive web.</p>
+                        <p class="tmp-section-desc mx-auto tmp-scroll-trigger tmp-fade-in animation-order-3">Experienced
+                            Drilling Superintendent and Senior Drill Supervisor with over 19 years of expertise in
+                            diamond and RC drilling operations, leading multi-rig projects, optimizing performance, and
+                            maintaining the highest standards of safety and operational excellence.</p>
                     </div>
                 </div>
             </div>
-            <!-- End Section Title  -->
-            <div class="row g-5 invers-arrange-container">
-                <!-- SINGLE BLOG -->
-                <div class="col-lg-6 invers-arrange-item">
-                    <div class="blog-style-2 inv-hover-item" data-bs-toggle="modal" data-bs-target="#blogModal">
-                        <div class="thumbnail inv-hover-img" data-displacement="assets/images/main/stripe.webp"
-                            data-intensity="0.2" data-speedin="1" data-speedout="1">
-                            <a aria-label="title">
-                                <img src="./assests/01.webp" alt="">
+            <div class="row  g-0">
+
+                <!-- Blog Item -->
+                <div class="col-lg-4 col-md-6">
+                    <article class="blog-card">
+                        <img src="assests/blog1.jpg" alt="Blog">
+
+                        <div class="blog-overlay"></div>
+
+                        <div class="blog-content">
+                            <span class="blog-tag">Drilling</span>
+
+                            <h4>
+                                Optimizing Diamond Drilling Performance
+                            </h4>
+
+                            <a href="#">
+                                Read Article
+                                <i class="fa-solid fa-arrow-right"></i>
                             </a>
-                            <canvas width="1276" height="880" style="width: 638px; height: 440px;"></canvas>
                         </div>
-                        <div class="content">
-                            <div class="shape">
-                                <img src="./assests/blog-shape.svg" alt="">
-                            </div>
-                            <div class="d-flex flex-wrap justify-content-between align-items-center pb-4">
-                                <div class="d-flex gap-3">
-                                    <a aria-label="Web Design" class="tmp-badge-cat">Web
-                                        Design</a>
-                                </div>
-                                <div class="blog-read-time">
-                                    <span class="tmp-blog-time"><i class="fa-light fa-clock"></i> 4 min read</span>
-                                </div>
-                            </div>
-                            <h3 class="h4 title">
-                                <a class="invers-hover-link" aria-label="title">
-                                    Designing Clean Interfaces For Web
-                                </a>
-                            </h3>
-
-                            <ul class="blog-meta">
-                                <li class="author-info">
-                                    <img src="./assests/author.png" alt="author">
-                                    <a class="author-name" aria-label="author">John Lee</a>
-                                </li>
-                                <li class="blog-date"><i class="fa-light fa-calendar"></i> March 25, 2026</li>
-                            </ul>
-
-                        </div>
-                    </div>
+                    </article>
                 </div>
-                <!-- END SINGLE BLOG -->
 
-                <!-- SINGLE BLOG -->
-                <div class="col-lg-6 invers-arrange-item">
-                    <div class="blog-style-2 inv-hover-item" data-bs-toggle="modal" data-bs-target="#blogModal">
-                        <div class="thumbnail inv-hover-img" data-displacement="assets/images/main/stripe.webp"
-                            data-intensity="0.2" data-speedin="1" data-speedout="1">
-                            <a aria-label="title">
-                                <img src="./assests/02.webp" alt="">
-                            </a>
-                            <canvas width="1276" height="880" style="width: 638px; height: 440px;"></canvas>
+                <!-- Repeat 5 More -->
+                <div class="col-lg-4 col-md-6">
+                    <article class="blog-card">
+                        <img src="assests/blog2.jpg" alt="">
+                        <div class="blog-overlay"></div>
+                        <div class="blog-content">
+                            <span class="blog-tag">Mining</span>
+                            <h4>Multi-Rig Operations Best Practices</h4>
+                            <a href="#">Read Article <i class="fa-solid fa-arrow-right"></i></a>
                         </div>
-                        <div class="content">
-                            <div class="shape">
-                                <img src="./assests/blog-shape.svg" alt="">
-                            </div>
-                            <div class="d-flex flex-wrap justify-content-between align-items-center pb-4">
-                                <div class="d-flex gap-3">
-                                    <a aria-label="UI Design" class="tmp-badge-cat">UI
-                                        Design</a>
-                                </div>
-                                <div class="blog-read-time">
-                                    <span class="tmp-blog-time"><i class="fa-light fa-clock"></i> 4 min read</span>
-                                </div>
-                            </div>
-                            <h3 class="h4 title">
-                                <a class="invers-hover-link" aria-label="title">
-                                    Building User Focused Digital
-                                </a>
-                            </h3>
-
-                            <ul class="blog-meta">
-                                <li class="author-info">
-                                    <img src="./assests/author-4.png" alt="author">
-                                    <a class="author-name" aria-label="author">John Lee</a>
-                                </li>
-                                <li class="blog-date"><i class="fa-light fa-calendar"></i> April 02, 2026</li>
-                            </ul>
-
-                        </div>
-                    </div>
+                    </article>
                 </div>
-                <!-- END SINGLE BLOG -->
 
-                <!-- SINGLE BLOG -->
-                <div class="col-lg-6 invers-arrange-item">
-                    <div class="blog-style-2 inv-hover-item" data-bs-toggle="modal" data-bs-target="#blogModal">
-                        <div class="thumbnail inv-hover-img" data-displacement="assets/images/main/stripe.webp"
-                            data-intensity="0.2" data-speedin="1" data-speedout="1">
-                            <a href="javscript:void(0)" aria-label="title">
-                                <img src="./assests/01.webp" alt="">
-                            </a>
-                            <canvas width="1276" height="880" style="width: 638px; height: 440px;"></canvas>
+                <div class="col-lg-4 col-md-6">
+                    <article class="blog-card">
+                        <img src="assests/blog3.jpg" alt="">
+                        <div class="blog-overlay"></div>
+                        <div class="blog-content">
+                            <span class="blog-tag">Safety</span>
+                            <h4>HSE Excellence In Modern Mining</h4>
+                            <a href="#">Read Article <i class="fa-solid fa-arrow-right"></i></a>
                         </div>
-                        <div class="content">
-                            <div class="shape">
-                                <img src="./assests/blog-shape.svg" alt="">
-                            </div>
-                            <div class="d-flex flex-wrap justify-content-between align-items-center pb-4">
-                                <div class="d-flex gap-3">
-                                    <a aria-label="UX Research" class="tmp-badge-cat">UX
-                                        Research</a>
-                                </div>
-                                <div class="blog-read-time">
-                                    <span class="tmp-blog-time"><i class="fa-light fa-clock"></i> 5 min read</span>
-                                </div>
-                            </div>
-                            <h3 class="h4 title">
-                                <a class="invers-hover-link" aria-label="title">
-                                    Improving User Experience UX
-                                </a>
-                            </h3>
-
-                            <ul class="blog-meta">
-                                <li class="author-info">
-                                    <img src="./assests/author-2.png" alt="author">
-                                    <a class="author-name" aria-label="author">John Lee</a>
-                                </li>
-                                <li class="blog-date"><i class="fa-light fa-calendar"></i> April 12, 2026</li>
-                            </ul>
-
-                        </div>
-                    </div>
+                    </article>
                 </div>
-                <!-- END SINGLE BLOG -->
 
-                <!-- SINGLE BLOG -->
-                <div class="col-lg-6 invers-arrange-item">
-                    <div class="blog-style-2 inv-hover-item" data-bs-toggle="modal" data-bs-target="#blogModal">
-                        <div class="thumbnail inv-hover-img" data-displacement="assets/images/main/stripe.webp"
-                            data-intensity="0.2" data-speedin="1" data-speedout="1">
-                            <a aria-label="title">
-                                <img src="./assests/04.webp" alt="">
-                            </a>
-                            <canvas width="1276" height="880" style="width: 638px; height: 440px;"></canvas>
+                <div class="col-lg-4 col-md-6">
+                    <article class="blog-card">
+                        <img src="assests/blog4.jpg" alt="">
+                        <div class="blog-overlay"></div>
+                        <div class="blog-content">
+                            <span class="blog-tag">Leadership</span>
+                            <h4>Building High Performance Teams</h4>
+                            <a href="#">Read Article <i class="fa-solid fa-arrow-right"></i></a>
                         </div>
-                        <div class="content">
-                            <div class="shape">
-                                <img src="./assests/blog-shape.svg" alt="">
-                            </div>
-                            <div class="d-flex flex-wrap justify-content-between align-items-center pb-4">
-                                <div class="d-flex gap-3">
-                                    <a aria-label="Case Study" class="tmp-badge-cat">Case
-                                        Study</a>
-                                </div>
-                                <div class="blog-read-time">
-                                    <span class="tmp-blog-time"><i class="fa-light fa-clock"></i> 6 min read</span>
-                                </div>
-                            </div>
-                            <h3 class="h4 title">
-                                <a class="invers-hover-link" aria-label="title">
-                                    Crafting Case Studies For Portfolio
-                                </a>
-                            </h3>
-
-                            <ul class="blog-meta">
-                                <li class="author-info">
-                                    <img src="./assests/author-3.png" alt="author">
-                                    <a class="author-name" aria-label="author">John Lee</a>
-                                </li>
-                                <li class="blog-date"><i class="fa-light fa-calendar"></i> April 22, 2026</li>
-                            </ul>
-
-                        </div>
-                    </div>
+                    </article>
                 </div>
-                <!-- END SINGLE BLOG -->
+
+                <div class="col-lg-4 col-md-6">
+                    <article class="blog-card">
+                        <img src="assests/blog3.jpg" alt="">
+                        <div class="blog-overlay"></div>
+                        <div class="blog-content">
+                            <span class="blog-tag">Equipment</span>
+                            <h4>Improving Rig Utilization Rates</h4>
+                            <a href="#">Read Article <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <article class="blog-card">
+                        <img src="assests/blog2.jpg" alt="">
+                        <div class="blog-overlay"></div>
+                        <div class="blog-content">
+                            <span class="blog-tag">Operations</span>
+                            <h4>Reducing Downtime In Drilling Projects</h4>
+                            <a href="#">Read Article <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+                </div>
 
             </div>
         </div>
@@ -1374,8 +1205,7 @@
                             <p class="max-620">Use design elements like colors, typography, and layout that reflect your
                                 unique style and professionalism Use design elements like colors.</p>
                             <div id="form-messages" class="error"></div>
-                            <form id="contact-form" method="POST"  
-                                class="contact-form mt-30">
+                            <form id="contact-form" method="POST" class="contact-form mt-30">
                                 <div class="row">
                                     <div class="col-lg-6 mb--35">
                                         <div class="form-group">
@@ -1454,8 +1284,7 @@
                                 <div class="icon"><i class="fa-light fa-location-dot"></i></div>
                                 <div class="content">
                                     <h5 class="fw-bold mb-2">Location</h5>
-                                    <a >New Orleans, Louisiana,
-                                        USA</a>
+                                    <a>Saudi Arabia</a>
                                 </div>
                             </div>
                         </div>
@@ -1465,7 +1294,108 @@
         </div>
     </section>
     <!-- contact section end -->
-
+    <section class="tmp-section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="tmp-client-title mb-60">
+                        <h3 class="h5">Trusted by World's Awesome Clients</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="tmp-client-marquee-wrapper">
+                <div class="tmp-client-marquee">
+                    <div class="tmp-client-marquee-track">
+                        <div class="tmp-client-item">
+                            <div class="tmp-client-card text-center">
+                                <a aria-label="client">
+                                    <img src="./assests/1.svg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="tmp-client-item">
+                            <div class="tmp-client-card text-center">
+                                <a aria-label="client">
+                                    <img src="./assests/2.svg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="tmp-client-item">
+                            <div class="tmp-client-card text-center">
+                                <a aria-label="client">
+                                    <img src="./assests/3.svg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="tmp-client-item">
+                            <div class="tmp-client-card text-center">
+                                <a aria-label="client">
+                                    <img src="./assests/4.svg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="tmp-client-item">
+                            <div class="tmp-client-card text-center">
+                                <a aria-label="client">
+                                    <img src="./assests/5.svg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="tmp-client-item">
+                            <div class="tmp-client-card text-center">
+                                <a aria-label="client">
+                                    <img src="./assests/6.svg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="tmp-client-item">
+                            <div class="tmp-client-card text-center">
+                                <a aria-label="client">
+                                    <img src="./assests/7.svg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="tmp-client-item">
+                            <div class="tmp-client-card text-center">
+                                <a aria-label="client">
+                                    <img src="./assests/8.svg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Duplicate for continuous loop -->
+                        <div class="tmp-client-item">
+                            <div class="tmp-client-card text-center">
+                                <a aria-label="client">
+                                    <img src="./assests/1.svg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="tmp-client-item">
+                            <div class="tmp-client-card text-center">
+                                <a aria-label="client">
+                                    <img src="./assests/2.svg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="tmp-client-item">
+                            <div class="tmp-client-card text-center">
+                                <a aria-label="client">
+                                    <img src="./assests/3.svg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="tmp-client-item">
+                            <div class="tmp-client-card text-center">
+                                <a aria-label="client">
+                                    <img src="./assests/4.svg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- footer section -->
     <div class="footer-modern-style-start">
         <div class="container-sm-fluid">
@@ -1477,8 +1407,8 @@
                         </a>
 
                         <h2 class="footer-textlarge-animation">
-                            <a class="text-scale-anim"><span
-                                    class="invers-word-span"><span class="invers-letter-span">S</span><span
+                            <a class="text-scale-anim"><span class="invers-word-span"><span
+                                        class="invers-letter-span">S</span><span
                                         class="invers-letter-span">a</span><span
                                         class="invers-letter-span">y</span></span> <span class="invers-word-span"><span
                                         class="invers-letter-span">H</span><span
@@ -1490,7 +1420,9 @@
                         </h2>
                     </div>
                     <div class="copyright-center-cocial">
-                        <p class="left-content">Powered by Justin Mwape</p>
+                        <p class="left-content">© 2025 Justin Mwape. All Rights Reserved.
+
+                        </p>
                         <div class="tmp-social-default sm-size justify-content-start">
                             <a href="https://facebook.com/" target="_blank" class="tmp-social-item"
                                 aria-label="facebook"><i class="fab fa-facebook-f"></i></a>
@@ -1501,7 +1433,9 @@
                             <a href="https://instagram.com/" target="_blank" class="tmp-social-item"
                                 aria-label="instagram"><i class="fab fa-instagram"></i></a>
                         </div>
-                        <p class="right-content">Copyright © <span id="year">2026</span></p>
+                        <p class="right-content">Drilling Superintendent
+
+                        </p>
                     </div>
                 </div>
             </div>
@@ -1606,77 +1540,66 @@
                             <img class="w-100" src="./assests/1.jpg" alt="">
                         </figure>
                     </div>
-                    <h3 class="fw-bold mb-4">Exploring Cutting Edge Techno Learn Shaping Tomorrow</h3>
+                    <h3 class="fw-bold mb-4">
+                        Advancing Drilling Operations Through Technology & Field Expertise
+                    </h3>
+
                     <p>
-                        In a world increasingly driven by innovation, cutting-edge technology is not just a
-                        buzzword—it's a
-                        catalyst for change, shaping the way we live, work, and learn. As we navigate the 21st century,
-                        the
-                        intersection of technology and education is becoming increasingly pivotal, influencing the
-                        methods,
-                        speed, and effectiveness of learning. This blog explores some of the most impactful technologies
-                        transforming education and how they are shaping the future of learning and, ultimately, our
-                        society.
+                        Modern drilling operations are increasingly driven by technology, safety systems, and
+                        performance optimization.
+                        In complex geological environments across Africa and the Middle East, successful drilling
+                        execution depends on
+                        the integration of experience, planning, and real-time decision-making at the field level.
                     </p>
+
                     <h4 class="fw-bold mb-4 mt--25">
-                        1. Artificial Intelligence: Personalizing Education
+                        1. Digital Monitoring & Drilling Optimization
                     </h4>
-                    <p>
-                        Artificial Intelligence (AI) is revolutionizing the educational landscape by enabling
-                        personalized
-                        learning experiences. AI-powered systems can adapt to the individual learning styles and paces
-                        of
-                        students, providing customized resources and feedback. Platforms like Duolingo and Khan Academy
-                        already use AI to tailor lessons to the needs of each learner, ensuring that students engage
-                        with
-                        material that is neither too easy nor too difficult.
 
-                        <span class="d-block fw-bold mb-3 mt-4">Impact on the Future:</span>
-                        AI has the potential to democratize education by providing access to quality resources for
-                        students
-                        around the world, regardless of geographical location. As AI continues to evolve, we can expect
-                        more
-                        sophisticated systems that offer deeper insights into a student’s strengths and weaknesses,
-                        enabling
-                        educators to better support their learning journeys.
+                    <p>
+                        Digital tools and real-time monitoring systems are transforming drilling performance by enabling
+                        better control
+                        of penetration rates, bit performance, and operational efficiency. These systems help
+                        supervisors make faster
+                        decisions and reduce downtime in the field.
+
+                        <span class="d-block fw-bold mb-3 mt-4">Impact on Operations:</span>
+                        Improves drilling accuracy, enhances productivity, and allows proactive problem-solving during
+                        challenging
+                        ground conditions.
                     </p>
+
                     <h4 class="fw-bold mb-4 mt--25">
-                        2. Virtual and Augmented Reality: Immersive Learning Environments
+                        2. Advanced Drilling Techniques & Equipment Efficiency
                     </h4>
-                    <p>
-                        Virtual Reality (VR) and Augmented Reality (AR) are breaking down the walls of traditional
-                        classrooms by creating immersive learning environments. Imagine studying ancient history by
-                        virtually walking through the ruins of Pompeii, or learning about marine biology by diving into
-                        a
-                        simulated ocean ecosystem. VR and AR make learning more engaging and interactive, helping
-                        students
-                        to better retain information.
 
-                        <span class="d-block fw-bold mb-3 mt-4">Impact on the Future:</span>
-                        As VR and AR technologies become more affordable and widespread, they will play a critical role
-                        in
-                        enhancing experiential learning. These technologies can also provide safe environments for
-                        practical
-                        training in fields like medicine, engineering, and emergency response, where real-world training
-                        can
-                        be risky or impractical.
+                    <p>
+                        Modern diamond and RC drilling techniques, combined with improved equipment design, have
+                        significantly increased
+                        core recovery rates and operational reliability. Proper selection of bits, mud systems, and
+                        drilling parameters
+                        plays a key role in achieving project targets.
+
+                        <span class="d-block fw-bold mb-3 mt-4">Impact on Operations:</span>
+                        Enhances core quality, reduces operational delays, and improves overall project delivery in
+                        complex formations.
                     </p>
-                    <h4 class="fw-bold mb-4 mt--25">3. Blockchain Technology: Securing Academic Credentials</h4>
-                    <p>
-                        Blockchain, best known for powering cryptocurrencies, is finding its way into the education
-                        sector
-                        by offering a secure method for storing and verifying academic credentials. With blockchain,
-                        diplomas, certificates, and transcripts can be securely stored and easily shared with employers
-                        or
-                        institutions, reducing the risk of fraud and simplifying the verification process.
 
-                        <span class="d-block fw-bold mb-3">Impact on the Future:</span>
-                        Blockchain could transform the way we manage educational records, making it easier for students
-                        to
-                        transfer credits between institutions or for employers to verify the qualifications of potential
-                        hires. This technology also opens the door to micro-credentialing, where learners can earn and
-                        showcase a series of smaller, verifiable credentials as they acquire new skills throughout their
-                        careers.
+                    <h4 class="fw-bold mb-4 mt--25">
+                        3. Safety Systems & Operational Compliance (HSE)
+                    </h4>
+
+                    <p>
+                        Health, Safety, and Environmental (HSE) compliance remains critical in drilling operations.
+                        Structured risk
+                        assessments, toolbox talks, and strict safety protocols ensure safe execution across multi-rig
+                        sites and
+                        reduce operational incidents.
+
+                        <span class="d-block fw-bold mb-3">Impact on Operations:</span>
+                        Strengthens workforce safety culture, minimizes downtime, and ensures compliance with
+                        international drilling
+                        standards.
                     </p>
 
                     <!-- comment form -->
@@ -1745,20 +1668,17 @@
                             <div class="text-content-pd">
                                 <span class="category">Featured - Design</span>
                                 <h3 class="mb--30">
-                                    Frontend &amp; Backend Development
+                                    Multi-Rig Drilling Supervision & Field Execution
                                 </h3>
-                                <p class="mb--20">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo,
-                                    numquam omnis itaque officia magni nisi ullam minima, sed molestiae cum facilis
-                                    ipsam voluptatum expedita esse odit vero? Porro, aliquam voluptate.</p>
-                                <p>Fuga tenetur repellendus ipsam corporis dicta nesciunt similique deserunt alias
-                                    inventore tempore, pariatur odit aut, quasi delectus? Nam repellendus molestias
-                                    possimus, totam blanditiis mollitia, consequatur, rem ratione voluptatum
-                                    perspiciatis maxime nulla ut aliquid officia fugit consequuntur quia libero magnam!
-                                    Obcaecati laudantium voluptatibus itaque voluptatem omnis. Numquam eveniet voluptas
-                                    quibusdam blanditiis, quia eaque, molestiae libero, laboriosam tempora provident
-                                    neque! Eligendi nostrum aut reprehenderit! Quod quo, repellat libero cum earum dolor
-                                    illum dolorem, reiciendis expedita, ea itaque sunt numquam sit?</p>
-
+                                <p class="mb--20">Experienced Drilling Superintendent with over 19 years in diamond and
+                                    RC drilling operations across Africa and the Middle East, leading multi-rig projects
+                                    with a strong focus on safety, efficiency, and production targets.</p>
+                                <p>Skilled in managing complex geological conditions, optimizing penetration rates,
+                                    improving core recovery, and ensuring smooth execution of drilling programs through
+                                    effective planning and real-time field supervision.</p>
+                                <p>Strong background in HSE compliance, crew leadership, equipment coordination, and
+                                    client communication, consistently delivering projects on time and within budget
+                                    while maintaining high operational standards.</p>
 
                                 <div class="button-group-modal-bottom  mt--40">
                                     <div class="button-group service-more-btn">
@@ -1798,8 +1718,8 @@
     <div class="designer-offcanvase tmp-offcanvas offcanvas offcanvas-start" id="offcanvaseMenu">
         <div class="offcanvas-header p-0">
             <div class="tmp-header-logo">
-                <a href="https://html.justin.com/biohub/index.html">
-                    <img class="tmp-logo-class" width="100" height="40" src="./assests/main-logo.svg" alt="logo">
+                <a>
+                    Justin Mwape
                 </a>
             </div>
             <button type="button" class="tmp-close" data-bs-dismiss="offcanvas" aria-label="Close"><i
@@ -1845,21 +1765,18 @@
                 </nav>
             </div>
             <div class="tmp-header-hiring mt-5">
-                <a 
-                    class="tmp-header-hiring-link w-100 text-center">Lets Talk </a>
-                <a 
-                    class="tmp-header-hiring-link w-100 text-center">Buy Now </a>
+                <a class="tmp-header-hiring-link w-100 text-center" href="https://web.whatsapp.com/">Lets Talk </a>
+                <a class="tmp-header-hiring-link w-100 text-center" href="#contact">Join Now </a>
             </div>
         </div>
     </div>
     <!-- offcanvase end -->
     <!-- All Scripts  -->
 
-    <div class="tmp-progress-parent tmp-backto-top-active">
+
+    <div class="tmp-progress-parent">
         <svg class="tmp-back-circle svg-inner" width="100%" height="100%" viewBox="-1 -1 102 102">
-            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"
-                style="transition: stroke-dashoffset 10ms linear; stroke-dasharray: 307.919, 307.919; stroke-dashoffset: 144.75;">
-            </path>
+            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
         </svg>
     </div>
 
@@ -1943,8 +1860,7 @@
                                     <div class="single-demo">
                                         <div class="inner">
                                             <div class="thumbnail">
-                                                <a target="_blank"
-                                                    href="https://html.justin.com/biohub/designer.html">
+                                                <a target="_blank" href="https://html.justin.com/biohub/designer.html">
                                                     <img class="w-100" src="./assests/02(1).webp"
                                                         alt="Personal Portfolio">
                                                     <span class="overlay-content">
@@ -1968,8 +1884,7 @@
                                     <div class="single-demo">
                                         <div class="inner">
                                             <div class="thumbnail">
-                                                <a target="_blank"
-                                                    href="https://html.justin.com/biohub/developer.html">
+                                                <a target="_blank" href="https://html.justin.com/biohub/developer.html">
                                                     <img class="w-100" src="./assests/03(1).webp"
                                                         alt="Personal Portfolio">
                                                     <span class="overlay-content">
@@ -2182,8 +2097,7 @@
                                     <div class="single-demo">
                                         <div class="inner">
                                             <div class="thumbnail">
-                                                <a target="_blank"
-                                                    href="https://html.justin.com/biohub/teacher.html">
+                                                <a target="_blank" href="https://html.justin.com/biohub/teacher.html">
                                                     <img class="w-100" src="./assests/12.webp" alt="Personal Portfolio">
                                                     <span class="overlay-content">
                                                         <span class="overlay-text">View Demo <i
@@ -2207,7 +2121,7 @@
                                     <div class="single-demo">
                                         <div class="inner">
                                             <div class="thumbnail">
-                                                <a >
+                                                <a>
                                                     <img class="w-100" src="./assests/coming-soon.png"
                                                         alt="Personal Portfolio">
                                                     <span class="overlay-content">
@@ -2217,8 +2131,7 @@
                                                 </a>
                                             </div>
                                             <div class="inner">
-                                                <h3 class="title"><a
-                                                        >Coming
+                                                <h3 class="title"><a>Coming
                                                         Soon</a></h3>
                                             </div>
                                         </div>
@@ -2231,7 +2144,7 @@
                                     <div class="single-demo">
                                         <div class="inner">
                                             <div class="thumbnail">
-                                                <a >
+                                                <a>
                                                     <img class="w-100" src="./assests/coming-soon.png"
                                                         alt="Personal Portfolio">
                                                     <span class="overlay-content">
@@ -2241,8 +2154,7 @@
                                                 </a>
                                             </div>
                                             <div class="inner">
-                                                <h3 class="title"><a
-                                                        >Coming
+                                                <h3 class="title"><a>Coming
                                                         Soon</a></h3>
                                             </div>
                                         </div>
@@ -2255,7 +2167,7 @@
                                     <div class="single-demo">
                                         <div class="inner">
                                             <div class="thumbnail">
-                                                <a >
+                                                <a>
                                                     <img class="w-100" src="./assests/coming-soon.png"
                                                         alt="Personal Portfolio">
                                                     <span class="overlay-content">
@@ -2265,8 +2177,7 @@
                                                 </a>
                                             </div>
                                             <div class="inner">
-                                                <h3 class="title"><a
-                                                        >Coming
+                                                <h3 class="title"><a>Coming
                                                         Soon</a></h3>
                                             </div>
                                         </div>
@@ -2591,7 +2502,7 @@
                                     <div class="single-demo">
                                         <div class="inner">
                                             <div class="thumbnail">
-                                                <a >
+                                                <a>
                                                     <img class="w-100" src="./assests/coming-soon.png"
                                                         alt="Personal Portfolio">
                                                     <span class="overlay-content">
@@ -2601,8 +2512,7 @@
                                                 </a>
                                             </div>
                                             <div class="inner">
-                                                <h3 class="title"><a
-                                                        >Coming
+                                                <h3 class="title"><a>Coming
                                                         Soon</a></h3>
                                             </div>
                                         </div>
@@ -2614,7 +2524,7 @@
                                     <div class="single-demo">
                                         <div class="inner">
                                             <div class="thumbnail">
-                                                <a >
+                                                <a>
                                                     <img class="w-100" src="./assests/coming-soon.png"
                                                         alt="Personal Portfolio">
                                                     <span class="overlay-content">
@@ -2624,8 +2534,7 @@
                                                 </a>
                                             </div>
                                             <div class="inner">
-                                                <h3 class="title"><a
-                                                        >Coming
+                                                <h3 class="title"><a>Coming
                                                         Soon</a></h3>
                                             </div>
                                         </div>
@@ -2637,7 +2546,7 @@
                                     <div class="single-demo">
                                         <div class="inner">
                                             <div class="thumbnail">
-                                                <a >
+                                                <a>
                                                     <img class="w-100" src="./assests/coming-soon.png"
                                                         alt="Personal Portfolio">
                                                     <span class="overlay-content">
@@ -2647,8 +2556,7 @@
                                                 </a>
                                             </div>
                                             <div class="inner">
-                                                <h3 class="title"><a
-                                                        >Coming
+                                                <h3 class="title"><a>Coming
                                                         Soon</a></h3>
                                             </div>
                                         </div>
@@ -2968,7 +2876,7 @@
                                     <div class="single-demo">
                                         <div class="inner">
                                             <div class="thumbnail">
-                                                <a >
+                                                <a>
                                                     <img class="w-100" src="./assests/coming-soon.png"
                                                         alt="Personal Portfolio">
                                                     <span class="overlay-content">
@@ -2978,8 +2886,7 @@
                                                 </a>
                                             </div>
                                             <div class="inner">
-                                                <h3 class="title"><a
-                                                        >Coming
+                                                <h3 class="title"><a>Coming
                                                         Soon</a></h3>
                                             </div>
                                         </div>
@@ -2992,7 +2899,7 @@
                                     <div class="single-demo">
                                         <div class="inner">
                                             <div class="thumbnail">
-                                                <a >
+                                                <a>
                                                     <img class="w-100" src="./assests/coming-soon.png"
                                                         alt="Personal Portfolio">
                                                     <span class="overlay-content">
@@ -3002,8 +2909,7 @@
                                                 </a>
                                             </div>
                                             <div class="inner">
-                                                <h3 class="title"><a
-                                                        >Coming
+                                                <h3 class="title"><a>Coming
                                                         Soon</a></h3>
                                             </div>
                                         </div>
@@ -3016,7 +2922,7 @@
                                     <div class="single-demo">
                                         <div class="inner">
                                             <div class="thumbnail">
-                                                <a >
+                                                <a>
                                                     <img class="w-100" src="./assests/coming-soon.png"
                                                         alt="Personal Portfolio">
                                                     <span class="overlay-content">
@@ -3026,8 +2932,7 @@
                                                 </a>
                                             </div>
                                             <div class="inner">
-                                                <h3 class="title"><a
-                                                        >Coming
+                                                <h3 class="title"><a>Coming
                                                         Soon</a></h3>
                                             </div>
                                         </div>
