@@ -574,6 +574,12 @@ img {
   .work-card {
     padding: 20px;
   }
+
+
+  .logo a,
+  .logo-area {
+    font-size: 30px;
+  }
 }
 
 .work-card .tmp-blog-time {
@@ -1819,6 +1825,11 @@ img {
   .tmp-popup-mobile-menu .inner {
     width: 310px;
     padding: 10px;
+  }
+
+  .logo a,
+  .logo-area {
+    font-size: 25px;
   }
 }
 
@@ -6324,6 +6335,7 @@ textarea:focus {
   background-image: url(../assests/hero-shape.svg);
   overflow: hidden;
   position: relative;
+  background-repeat: no-repeat;
 }
 
 .banner-style-2 .shape {
@@ -11947,6 +11959,7 @@ html {
     padding-left: 110px;
     padding-right: 72px;
   }
+
 }
 
 @media only screen and (max-width: 767px) {
@@ -24772,6 +24785,49 @@ body.color-tmp-tec {
     /* allow natural height on mobile */
     padding: 20px;
   }
+
+  .banner-style-2 .content-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .banner-style-2 .banner-content {
+    flex: 1;
+  }
+
+  .banner-style-2 .banner-image {
+    flex: 0 0 360px;
+  }
+
+  .banner-style-2 .banner-image-thumb figure img {
+    width: 100%;
+    max-width: 360px;
+  }
+
+  .banner-style-2 .content-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .banner-style-2 .banner-content {
+    flex: 1;
+  }
+
+  .banner-style-2 .banner-image {
+    flex: 0 0 360px;
+  }
+
+  .banner-style-2 .banner-image-thumb figure img {
+    width: 100%;
+    max-width: 360px;
+  }
+
+  .banner-style-2 .content-wrapper .banner-content .title {
+    font-size: 30px;
+  }
+
 }
 
 .tmp-expertise-item i {

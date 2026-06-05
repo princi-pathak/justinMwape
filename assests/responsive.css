@@ -1,0 +1,592 @@
+/*
+  ============================================================
+  RESPONSIVE.CSS — Full Device Responsiveness
+  Add this AFTER style.css in your <head>:
+  <link rel="stylesheet" href="./assests/responsive.css">
+  ============================================================
+  Breakpoints:
+    Mobile      : max-width 575px
+    Mobile-L    : max-width 767px
+    iPad/Tablet : 768px – 1024px
+    Laptop      : 1025px – 1280px
+    Desktop     : 1281px+
+  ============================================================
+*/
+
+/* ─── CSS Variable Overrides ─────────────────────────────── */
+:root {
+  --h1: 74px;
+  --h2: 48px;
+  --h3: 34px;
+  --h4: 24px;
+  --h5: 20px;
+  --h6: 16px;
+}
+
+/* ─── Global Helpers ─────────────────────────────────────── */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* ─── Container ──────────────────────────────────────────── */
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* ============================================================
+   DESKTOP  ≥ 1281px  (baseline — mostly fine, minor tweaks)
+   ============================================================ */
+@media only screen and (min-width: 1281px) {
+  .container { max-width: 1200px; }
+
+  /* Hero */
+  .banner-style-2 .content-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+  }
+  .banner-style-2 .banner-content { flex: 1; }
+  .banner-style-2 .banner-image   { flex: 0 0 420px; }
+}
+
+/* ============================================================
+   LAPTOP  1025px – 1280px
+   ============================================================ */
+@media only screen and (min-width: 1025px) and (max-width: 1280px) {
+  :root {
+    --h1: 58px;
+    --h2: 40px;
+    --h3: 28px;
+    --h4: 22px;
+  }
+
+  .container { max-width: 960px; }
+
+  /* Header */
+  .header-content { padding: 0 15px; }
+  .logo a, .logo-area { font-size: 30px; }
+
+  /* Hero */
+  .banner-style-2 .content-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+  .banner-style-2 .banner-content { flex: 1; }
+  .banner-style-2 .banner-image   { flex: 0 0 360px; }
+  .banner-style-2 .banner-image-thumb figure img {
+    width: 100%;
+    max-width: 360px;
+  }
+
+  /* Portfolio */
+  .portfolio-style-2 .content {
+    flex-direction: row;
+    gap: 30px;
+  }
+  .portfolio-style-2 .content-left  { flex: 1; }
+  .portfolio-style-2 .content-right { flex: 0 0 300px; }
+
+  /* Service cards */
+  .service.service-style-2 { padding: 30px 20px; }
+
+  /* Section padding */
+  .tmp-section-padding {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
+
+/* ============================================================
+   IPAD / TABLET  768px – 1024px
+   ============================================================ */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  :root {
+    --h1: 48px;
+    --h2: 36px;
+    --h3: 26px;
+    --h4: 20px;
+    --h5: 18px;
+    --h6: 15px;
+    --p:  15px;
+  }
+
+  .container {
+    max-width: 720px;
+    padding-right: 20px;
+    padding-left:  20px;
+  }
+
+  /* ── Header ── */
+  .header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+  }
+  .logo a, .logo-area { font-size: 26px; }
+
+  /* Hide desktop nav, show hamburger */
+  .tmp-mainmenu-nav { display: none !important; }
+  .tmp-side-collups-area { display: block !important; }
+
+  /* Header buttons */
+  .header-btn .tmp-btn { font-size: 13px; padding: 8px 16px; }
+  .header-btn .d-none.d-sm-block { display: block !important; }
+
+  /* ── Hero ── */
+  .banner-style-2 .content-wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 40px;
+    padding-top: 100px;
+    padding-bottom: 60px;
+    text-align: center;
+  }
+  .banner-style-2 .banner-content { width: 100%; }
+  .banner-style-2 .banner-image   { width: 100%; max-width: 380px; }
+  .banner-style-2 .banner-image-thumb figure img {
+    width: 100%;
+    max-width: 380px;
+    margin: 0 auto;
+  }
+
+  .banner-style-2 h1.title { font-size: 44px; line-height: 1.15; }
+  .banner-style-2 .description { font-size: 15px; }
+
+  /* Center skills row */
+  .banner-style-2 .d-flex.flex-wrap.gap-8 {
+    justify-content: center;
+  }
+  .banner-style-2 .banner-btn { text-align: center; }
+  .banner-style-2 .banner-btn .mt-70 { margin-top: 40px; }
+
+  /* ── Section titles ── */
+  .tmp-section-title { font-size: 34px; }
+  .tmp-section-padding {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
+  /* ── Services ── */
+  .tmp-section#service .row.g-5 {
+    row-gap: 24px !important;
+  }
+  .service.service-style-2 {
+    padding: 30px 20px;
+  }
+
+  /* ── Portfolio ── */
+  .portfolio-style-2 .content {
+    flex-direction: column;
+    gap: 24px;
+  }
+  .portfolio-style-2 .content-right { width: 100%; }
+  .portfolio-style-2 .content-left  { width: 100%; }
+  .portfolio-style-2 .content-right-thumb img { width: 100%; border-radius: 8px; }
+
+  /* ── Blog cards ── */
+  .blog-card { height: 340px; }
+
+  /* ── Contact ── */
+  .contact-form-wrapper,
+  .contact-info-wrapper {
+    width: 100%;
+  }
+  .contact-row {
+    flex-direction: column;
+  }
+
+  /* ── Footer ── */
+  .footer-inner {
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+  }
+
+  /* ── Mobile menu popup ── */
+  .tmp-popup-mobile-menu .inner {
+    padding: 30px 24px;
+  }
+
+  /* ── Preloader ── */
+  .loader-title { font-size: 28px; }
+}
+
+/* ============================================================
+   MOBILE-L  481px – 767px
+   ============================================================ */
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+  :root {
+    --h1: 38px;
+    --h2: 28px;
+    --h3: 22px;
+    --h4: 18px;
+    --h5: 16px;
+    --h6: 14px;
+    --p:  14px;
+  }
+
+  .container {
+    padding-right: 20px;
+    padding-left:  20px;
+  }
+
+  /* ── Header ── */
+  .logo a, .logo-area { font-size: 22px; }
+  .tmp-mainmenu-nav   { display: none !important; }
+  .tmp-side-collups-area { display: block !important; }
+  .header-btn .d-none.d-sm-block { display: none !important; }
+  .header-btn .tmp-btn:last-child { font-size: 12px; padding: 7px 14px; }
+
+  /* ── Hero ── */
+  .banner-style-2 .content-wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 30px;
+    padding-top: 90px;
+    padding-bottom: 50px;
+    text-align: center;
+  }
+  .banner-style-2 h1.title {
+    font-size: 34px;
+    line-height: 1.2;
+  }
+  .banner-style-2 .description { font-size: 14px; line-height: 1.7; }
+  .banner-style-2 .banner-image { max-width: 300px; margin: 0 auto; }
+  .banner-style-2 .banner-image-thumb figure img { width: 100%; }
+
+  .banner-style-2 .d-flex.flex-wrap.gap-8 {
+    flex-direction: column;
+    align-items: center;
+    gap: 16px !important;
+  }
+  .banner-style-2 .banner-btn { text-align: center; margin-top: 30px; }
+  .banner-btn .mt-70 { margin-top: 30px !important; }
+
+  /* ── Sections ── */
+  .tmp-section-padding {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .tmp-section-title { font-size: 26px; }
+  .mb--60 { margin-bottom: 36px !important; }
+
+  /* ── Services ── */
+  .service.service-style-2 { padding: 24px 16px; }
+  .service.service-style-2 .icon.mb-30 { margin-bottom: 16px; }
+
+  /* ── Portfolio ── */
+  .portfolio-style-2 {
+    background-attachment: scroll !important;
+  }
+  .portfolio-style-2 .content {
+    flex-direction: column;
+    gap: 20px;
+    padding: 24px;
+  }
+  .portfolio-style-2 .content-left h3 {
+    font-size: 20px;
+    margin-bottom: 16px !important;
+  }
+  .portfolio-style-2 .content-right { width: 100%; }
+  .portfolio-style-2 .content-right-thumb img { width: 100%; border-radius: 8px; }
+
+  /* ── Blog ── */
+  .blog-card { height: auto; min-height: 300px; padding: 20px; }
+  .blog-content h4 { font-size: 18px; }
+
+  /* ── Contact ── */
+  .contact-info .contact-icon { width: 44px; height: 44px; font-size: 18px; }
+
+  /* ── Fun facts ── */
+  .tmp-fun-fact .count-text { font-size: 36px; }
+
+  /* ── Demo section ── */
+  .single-demo .thumbnail img { border-radius: 8px; }
+
+  /* ── Preloader ── */
+  .loader-title { font-size: 24px; }
+  .loader-spinner { width: 60px; height: 60px; }
+}
+
+/* ============================================================
+   MOBILE  ≤ 480px  (small phones)
+   ============================================================ */
+@media only screen and (max-width: 480px) {
+  :root {
+    --h1: 30px;
+    --h2: 24px;
+    --h3: 20px;
+    --h4: 17px;
+    --h5: 15px;
+    --h6: 13px;
+    --p:  14px;
+  }
+
+  .container {
+    padding-right: 16px;
+    padding-left:  16px;
+  }
+
+  /* ── Header ── */
+  .header-defalut-spacing { padding: 12px 0; }
+  .logo a, .logo-area { font-size: 18px; }
+  .tmp-mainmenu-nav  { display: none !important; }
+  .tmp-side-collups-area { display: block !important; }
+  .header-btn .d-none.d-sm-block { display: none !important; }
+  .header-btn .tmp-btn:last-child {
+    font-size: 11px;
+    padding: 6px 12px;
+    border-radius: 20px;
+  }
+  .tmp-menu-bars { font-size: 20px; }
+
+  /* ── Hero ── */
+  .banner-style-2 .content-wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 24px;
+    padding-top: 80px;
+    padding-bottom: 40px;
+    text-align: center;
+  }
+  .banner-style-2 h1.title {
+    font-size: 26px;
+    line-height: 1.25;
+  }
+  .banner-style-2 .subtitle { font-size: 14px; }
+  .banner-style-2 .description {
+    font-size: 13px;
+    line-height: 1.75;
+  }
+  .banner-style-2 .banner-image {
+    max-width: 240px;
+    margin: 0 auto;
+  }
+  .banner-style-2 .banner-image-thumb figure img { width: 100%; }
+
+  /* skills row: stack vertically */
+  .banner-style-2 .d-flex.flex-wrap.gap-8 {
+    flex-direction: column;
+    align-items: center;
+    gap: 14px !important;
+  }
+  .tmp-expertise { flex-wrap: wrap; justify-content: center; }
+  .banner-style-2 .banner-btn { text-align: center; }
+  .banner-btn .mt-70 { margin-top: 24px !important; }
+
+  /* ── Section padding ── */
+  .tmp-section-padding {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .tmp-section-title { font-size: 22px; line-height: 1.3; }
+  .tmp-section-desc  { font-size: 13px; }
+  .mb--60 { margin-bottom: 28px !important; }
+
+  /* ── Services ── */
+  .service.service-style-2 {
+    padding: 20px 14px;
+  }
+  .service.service-style-2 .content .icon img { width: 44px; }
+  .service.service-style-2 .content a.h5 { font-size: 16px; }
+  .service.service-style-2 .content p { font-size: 13px; }
+
+  /* ── Portfolio ── */
+  .portfolio-style-2 {
+    background-attachment: scroll !important;
+    padding: 20px 0 !important;
+  }
+  .portfolio-style-2 .content {
+    flex-direction: column;
+    gap: 16px;
+    padding: 20px 16px;
+  }
+  .portfolio-style-2 .content-left h3 {
+    font-size: 18px;
+    margin-bottom: 12px !important;
+  }
+  .portfolio-style-2 .content-left p { font-size: 13px; }
+  .portfolio-style-2 .content-right { width: 100%; }
+  .portfolio-style-2 .content-right-thumb img {
+    width: 100%;
+    border-radius: 8px;
+    max-height: 220px;
+    object-fit: cover;
+  }
+  .portfolio-btn .tmp-btn { font-size: 13px; padding: 8px 16px; }
+
+  /* ── Blog ── */
+  .blog-card {
+    height: auto;
+    min-height: 260px;
+    padding: 16px;
+  }
+  .blog-content { left: 16px; right: 16px; bottom: 16px; }
+  .blog-content h4 { font-size: 16px; margin-bottom: 10px; }
+  .blog-tag { font-size: 10px; }
+
+  /* ── Contact section ── */
+  .contact-info {
+    padding: 20px 16px;
+  }
+  .contact-info .contact-icon {
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+    flex-shrink: 0;
+  }
+  .contact-info .para { font-size: 13px; }
+  input, textarea, select {
+    font-size: 14px !important;
+  }
+
+  /* ── Fun facts ── */
+  .tmp-fun-fact .count-text { font-size: 30px; }
+  .tmp-fun-fact .subtitle   { font-size: 13px; }
+
+  /* ── Testimonials ── */
+  .testimonial-card { padding: 20px 16px; }
+
+  /* ── Demo grid ── */
+  .single-demo { margin-bottom: 20px; }
+  .single-demo .thumbnail img { border-radius: 6px; }
+  .single-demo .inner .title { font-size: 15px; }
+
+  /* ── Mobile menu popup ── */
+  .tmp-popup-mobile-menu .inner {
+    padding: 20px 16px;
+  }
+  .tmp-popup-mobile-menu .tmp-mainmenu li a {
+    font-size: 16px;
+    padding: 10px 0;
+  }
+  .tmp-popup-mobile-menu .social-wrapper { margin-top: 24px !important; }
+
+  /* ── Preloader ── */
+  .loader-title    { font-size: 20px; letter-spacing: 2px; }
+  .loader-subtitle { font-size: 12px; }
+  .loader-spinner  { width: 52px; height: 52px; margin-bottom: 18px; }
+
+  /* ── Buttons ── */
+  .tmp-btn { font-size: 13px; padding: 10px 20px; }
+
+  /* ── Section number / fsb ── */
+  .tmp-fsb { gap: 8px; }
+  .tmp-fsb .border-left,
+  .tmp-fsb .border-right { width: 30px; }
+
+  /* ── Back to top ── */
+  #back-to-top { width: 38px; height: 38px; font-size: 14px; right: 16px; bottom: 16px; }
+
+  /* ── Modals ── */
+  .modal-dialog { margin: 10px; }
+  .modal-content { padding: 16px; }
+}
+
+/* ============================================================
+   VERY SMALL PHONES  ≤ 360px
+   ============================================================ */
+@media only screen and (max-width: 360px) {
+  :root {
+    --h1: 24px;
+    --h2: 20px;
+    --h3: 17px;
+  }
+
+  .banner-style-2 h1.title { font-size: 22px; }
+  .tmp-section-title        { font-size: 20px; }
+  .logo a, .logo-area       { font-size: 16px; }
+
+  .tmp-expertise-item i { font-size: 16px; }
+
+  .blog-card { min-height: 220px; }
+  .blog-content h4 { font-size: 14px; }
+}
+
+/* ============================================================
+   UNIVERSAL TOUCH / MOBILE FIXES  (applies ≤ 767px)
+   ============================================================ */
+@media only screen and (max-width: 767px) {
+
+  /* Prevent horizontal scroll */
+  body { overflow-x: hidden; }
+
+  /* Smooth scroll on mobile */
+  html { scroll-behavior: smooth; }
+
+  /* Fix fixed backgrounds on iOS */
+  .banner-style-2,
+  .portfolio-style-2,
+  .designer-hero-bg {
+    background-attachment: scroll !important;
+  }
+
+  /* Row gap overrides */
+  .row.g-5 { --bs-gutter-x: 1rem; --bs-gutter-y: 1rem; }
+
+  /* Typography line-height */
+  h1, h2, h3, h4, h5, h6 { line-height: 1.3; }
+  p { line-height: 1.75; }
+
+  /* col overrides */
+  .col-xl-4, .col-lg-6, .col-md-6 { width: 100%; }
+  .col-xxl-10, .col-xl-12, .col-lg-12 { width: 100%; }
+
+  /* Popup mobile menu full width */
+  .tmp-popup-mobile-menu {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  /* hide shapes that break layout */
+  .banner-style-2 .shape { display: none; }
+
+  /* Make all cards full width */
+  .service-stack { width: 100%; }
+
+  /* Swiper prev/next always visible on mobile */
+  .swiper-button-controler .slider-button .swiper-btn {
+    opacity: 1 !important;
+    width: 40px;
+    height: 40px;
+  }
+}
+
+/* ============================================================
+   IPAD LANDSCAPE  1024px exact (common iPad Pro landscape)
+   ============================================================ */
+@media only screen and (min-width: 1024px) and (max-width: 1024px) {
+  .container { max-width: 960px; }
+
+  .banner-style-2 h1.title { font-size: 46px; }
+  .banner-style-2 .banner-image { flex: 0 0 340px; }
+}
+
+/* ============================================================
+   PRINT — clean layout for printing
+   ============================================================ */
+@media print {
+  .header-area,
+  .tmp-side-collups-area,
+  .tmp-popup-mobile-menu,
+  #preloader,
+  #back-to-top,
+  .banner-btn { display: none !important; }
+
+  body { background: #fff; color: #000; }
+  .container { max-width: 100%; }
+}
